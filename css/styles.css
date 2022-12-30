@@ -36,6 +36,8 @@ form {
   width: 600px;
   border: none;
   border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .search {
@@ -49,3 +51,4 @@ form {
   font-size: 25px;
   font-weight: 500;
 }
+
