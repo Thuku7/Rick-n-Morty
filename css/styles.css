@@ -14,3 +14,11 @@
   background-repeat: no-repeat;
 
 }
+
+.landingPage-heading {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
