@@ -8,4 +8,8 @@
 
 .landing-page {
   height: 100vh;
+  background-image: url(https://res.cloudinary.com/dpeaxhcl5/image/upload/v1672397635/Morty%20project/85327_sxc48b.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
