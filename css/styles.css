@@ -24,7 +24,16 @@
 
 }
 
-.search-form {
-  height: 80vh;
- 
+
+
+form {
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+#fname {
+  height: 80px;
+  width: 600px;
+  border: none;
+  border-radius: 50px;
 }
