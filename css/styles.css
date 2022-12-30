@@ -3,3 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*landing page styles*/
+
+.landing-page {
+  height: 100vh;
+}
