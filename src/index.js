@@ -1,1 +1,4 @@
-console.log("Hello")
+let characterForm = document.getElementById('search-form');
+
+
+
