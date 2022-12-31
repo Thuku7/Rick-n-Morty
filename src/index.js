@@ -12,11 +12,13 @@ characterForm.addEventListener('submit', function(event) {
 })
 
 
-function showCharacter(submitedCharacter) {
-  fetch(`https://rickandmortyapi.com/api/character/?name=${submitedCharacter}`)
+function showCharacter(submitedCharacter) {  
+  fetch('https://rickandmortyapi.com/api/character/?name='+ submitedCharacter)
   .then(res => res.json())
-  .then(data => console.log(data))
+  .then(data => renderCharacter(data))   
 }
+
+
 
 
 
