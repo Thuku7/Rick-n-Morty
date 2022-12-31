@@ -33,11 +33,12 @@ createCharacterForm.addEventListener('submit', function(event){
     species : event.target.species.value
 
   }
+  
   showCharacter(characterObject)
   updateCharacter(characterObject)
   
 
-  console.log(characterObject)
+  
   createCharacterForm.reset()
 })
 
@@ -70,13 +71,20 @@ function renderCharacter(data) {
   <p> Status: ${data.results[0].status}</p>
   <p> Species: ${data.results[0].species}</p>
   <p> Origin: ${data.results[0].origin.name}</p>
-  <button type="button">Like</button>
+  <div>  <button type="button" id="like">Like </button><span id="like-result">0</span></div>
+
+  <button type="button">Delete</button>
   </div>
  
 
   </div>`
   
 document.getElementById('search-form').appendChild(displayCharacter)
+displayCharacter.addEventListener('click',function() {
+  let initialLike = 0;
+  let likes = displayCharacter.querySelector("#like-result");
+  likes.innerHTML =`${initialLike + 1 }` 
+} )
  
    
 }
