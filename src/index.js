@@ -1,5 +1,6 @@
 let characterForm = document.getElementById('search-form');
 let searchInput = document.getElementById('fname');
+let createCharacterForm = document.getElementById('create-character-form');
 
 
 
@@ -20,6 +21,20 @@ characterForm.addEventListener('submit', function(event) {
 
     characterForm.reset();
     
+})
+
+createCharacterForm.addEventListener('submit', function(event){
+  event.preventDefault()
+  let characterObject = {
+    image : event.target.character-image.value,
+    name : event.target.charactername.value,
+    status : event.target.status.value,
+    origin : event.target.originname.value,
+    species : event.target.species.value
+
+  }
+
+  console.log(characterObject)
 })
 
 
