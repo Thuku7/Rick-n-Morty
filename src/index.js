@@ -11,8 +11,11 @@ characterForm.addEventListener('submit', function(event) {
       alert("Enter Valid Character")
     } else {
       showCharacter(submitedCharacter)
+      
+      
 
     }
+    
     
 
     characterForm.reset();
