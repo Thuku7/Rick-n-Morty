@@ -675,6 +675,14 @@
       "origin": "mars",
       "species": "alien",
       "id": 21
+    },
+    {
+      "image": null,
+      "name": "noob",
+      "status": "alive",
+      "origin": "nairobi",
+      "species": "alien",
+      "id": 22
     }
   ]
 }
