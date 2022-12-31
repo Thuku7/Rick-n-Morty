@@ -7,9 +7,15 @@ let searchInput = document.getElementById('fname');
 characterForm.addEventListener('submit', function(event) {
     event.preventDefault()
     let submitedCharacter = searchInput.value
-    showCharacter(submitedCharacter)
+    if(submitedCharacter === "") {
+      alert("Enter Valid Character")
+    } else {
+      showCharacter(submitedCharacter)
 
-    this.reset();
+    }
+    
+
+    characterForm.reset();
     
 })
 
