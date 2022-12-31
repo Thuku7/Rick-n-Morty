@@ -18,7 +18,9 @@ function showCharacter(submitedCharacter) {
   .then(data => renderCharacter(data))   
 }
 
-
+function renderCharacter(data) {
+  let displayCharacter = document.createElement('li')
+}
 
 
 
