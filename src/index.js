@@ -35,6 +35,7 @@ createCharacterForm.addEventListener('submit', function(event){
   }
 
   console.log(characterObject)
+  createCharacterForm.reset()
 })
 
 
