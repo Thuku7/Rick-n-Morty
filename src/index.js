@@ -33,6 +33,9 @@ createCharacterForm.addEventListener('submit', function(event){
     species : event.target.species.value
 
   }
+  showCharacter(characterObject)
+  updateCharacter(characterObject)
+  
 
   console.log(characterObject)
   createCharacterForm.reset()
@@ -45,6 +48,18 @@ function showCharacter(submitedCharacter) {
   .then(data => renderCharacter(data))   
 }
 
+function updateCharacter(characterObject) {
+  fetch('http://localhost:3000/results',{
+    method: "POST",
+    headers : {
+      'Content-type' : 'application/json'
+    },
+    body:JSON.stringify(characterObject)
+  })
+  .then(res => res.json)
+  .then(data => console.log(data))
+}
+
 function renderCharacter(data) {
   let displayCharacter = document.createElement('li');
   displayCharacter.innerHTML = `
@@ -55,6 +70,7 @@ function renderCharacter(data) {
   <p> Status: ${data.results[0].status}</p>
   <p> Species: ${data.results[0].species}</p>
   <p> Origin: ${data.results[0].origin.name}</p>
+  <button type="button">Like</button>
   </div>
  
 
